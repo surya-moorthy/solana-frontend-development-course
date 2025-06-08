@@ -8,6 +8,7 @@ import Navbar from '../components/Navbar';
 import WalletContextProvider from '../contexts/WalletContextProvider';
 import TransitionContextProvider from '../contexts/TransitionContextProvider';
 import Head from 'next/head';
+import Starter from './wallets/starter';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -18,10 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <WalletContextProvider>
         <Navbar />
-        <ToastContainer />
-        <TransitionContextProvider>
-          <Component {...pageProps} />
-        </TransitionContextProvider>
+        <Component {...pageProps} />
       </WalletContextProvider>
     </>
   );

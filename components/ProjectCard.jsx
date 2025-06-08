@@ -1,4 +1,4 @@
-import { CodeIcon } from '@heroicons/react/outline';
+// import { CodeIcon } from '@heroicons/ react/outline';
 
 const ProjectCard = ({ project, displayRequirements, setDisplayRequirements, index }) => (
     <div className='relative bg-helius-orange rounded-lg cols-span-1'>
@@ -27,7 +27,7 @@ const ProjectCard = ({ project, displayRequirements, setDisplayRequirements, ind
                         onClick={() => setDisplayRequirements(!displayRequirements)}
                     >
                         requirements
-                        <CodeIcon width='25px' className='pl-1' />
+                        {/* <CodeIcon width='25px' className='pl-1' /> */}
                     </button>
                 </div>
             </div>
